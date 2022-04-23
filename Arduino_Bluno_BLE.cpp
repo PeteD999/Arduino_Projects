@@ -1,5 +1,5 @@
 #include <Arduino.h>
-byte BT;
+byte BLE;
 const byte led=13;
 
 void setup(){
@@ -9,12 +9,12 @@ void setup(){
 
 void loop(){
   while(Serial.available()){
-    BT=Serial.read();
+    BLE=Serial.read();
   }
-  if(BT=='6'){
+  if(BLE=='1'){
     digitalWrite(led, HIGH);
   }
-  if(BT=='7'){
+  if(BLE=='0'){
     digitalWrite(led, LOW);
   }
 }
