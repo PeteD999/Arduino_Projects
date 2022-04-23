@@ -1,4 +1,4 @@
-// Millis Example Code, LED State ON & OFF
+// Millis Example, LED State ON & OFF
 
 #include <Arduino.h>
 int ledPin=13;
