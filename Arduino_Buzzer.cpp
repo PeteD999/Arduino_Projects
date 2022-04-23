@@ -1,6 +1,6 @@
 #include <Arduino.h>
 const int buzzer=12;
-int del=75;
+const int del=75;
 
 void setup(){
     pinMode(buzzer, OUTPUT);
