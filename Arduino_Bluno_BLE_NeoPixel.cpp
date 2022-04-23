@@ -32,24 +32,24 @@ void setup(){
 }
 
 void loop(){
-  //Checking for serial and reading given value of each state
+  //Checking for serial value and assigning BTState
   //millis loop in each statement
   while(Serial.available()){
     BT=Serial.read();
   }
-  //BTState 1 is the state of blue and green cycle
+  //BTState 1 is the state of blue+green cycle
   if(BT==10){
     BTState=1;
   }
-  //BTState 2 is the state of blue and red cycle
+  //BTState 2 is the state of blue+red cycle
   if(BT==11){
     BTState=2;
   }
-  //BTState 3 is the state of rainbow cycle
+  //BTState 3 is the state of "rainbow" blue+green & blue+red
   if(BT==12){
     BTState=3; 
   }
-  //BTState 4 is the state of white light
+  //BTState 4 is the state of yellow white light
   if(BT==13){
     BTState=4;
   }
